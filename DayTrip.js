@@ -136,16 +136,16 @@ function dontLike (userPromt){
 
 function doYouLike(destination){
     alert(destination);
-    userPromt = prompt("Do you think the trip that is planned out for you is perfect and would you like to book it right now type Yes! If you wanna plan a new trip type No");
+    userPromt = confirm ("Do you think the trip that is planned out for you is perfect and would you like to book it right now OK! If you wanna plan a new trip click Cancel");
   
 
-    if(userPromt === "Yes"){
+    if(userPromt == true){
         alert("All Sales are final now and this is your trip! "+destination);
         alert("I am glad we could find the most perfect day trip for you! I hear all these places have really good safty standers!");
         console.log("confirmed");    
         console.log(destination);
     }
-    else if(userPromt === "No"){
+    else{
         alert("O No! Well Lets plan a new trip by hitting the button again");
         console.log("They wanna redo "+userPromt);
     }    
